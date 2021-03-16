@@ -8,4 +8,4 @@ bart = torch.hub.load('pytorch/fairseq', 'bart.base')
 bart.eval()
 bart.fill_mask(['The cat <mask> on the <mask>.'], topk=3, beam=10)
 ```
-* Results in `enthymeme_bart_large.hypo`
+* Results in `enthymeme.hypo`
