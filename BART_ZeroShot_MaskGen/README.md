@@ -4,7 +4,7 @@
 * Used [BART](https://github.com/pytorch/fairseq/tree/master/examples/bart) Zero Shot to fill masks
 
 ```
-bart = torch.hub.load('pytorch/fairseq', 'bart.large')
+bart = torch.hub.load('pytorch/fairseq', 'bart.base')
 bart.eval()
 bart.fill_mask(['The cat <mask> on the <mask>.'], topk=3, beam=10)
 ```
