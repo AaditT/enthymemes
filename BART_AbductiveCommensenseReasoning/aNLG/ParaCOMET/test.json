@@ -1,0 +1,46 @@
+{
+    "storyid": 1, 
+    "story": "The hayride was in October. It was the perfect start to the fall season.", 
+    "<|sent0|>_generated_relations": [
+        ["go to the hayride", "to go to the market", "to go to the hayride"], 
+        ["to have fun", "to enjoy the outdoors", "to enjoy"], 
+        ["to have fun", "to enjoy the weather", "to enjoy"], 
+        ["have fun", "they have a good time", "they have fun"], 
+        ["happy", "pleased", "proud"], 
+        ["to have fun", "to enjoy", "to enjoy the weather"], 
+        ["thankful", "happy", "also happy"], 
+        ["get 's some fresh air", "personx gets exercise", "sweats"], 
+        ["happy", "free", "carefree"]
+    ], 
+    "<|sent0|>_generated_dims": [
+        ["<|xNeed|>", "<|xNeed|>", "<|xNeed|>"], 
+        ["<|xIntent|>", "<|xIntent|>", "<|xIntent|>"], 
+        ["<|xWant|>", "<|xWant|>", "<|xWant|>"], 
+        ["<|oEffect|>", "<|oEffect|>", "<|oEffect|>"], 
+        ["<|xReact|>", "<|xReact|>", "<|xReact|>"], 
+        ["<|oWant|>", "<|oWant|>", "<|oWant|>"], 
+        ["<|oReact|>", "<|oReact|>", "<|oReact|>"], 
+        ["<|xEffect|>", "<|xEffect|>", "<|xEffect|>"], 
+        ["<|xAttr|>", "<|xAttr|>", "<|xAttr|>"]
+    ], "<|sent1|>_generated_relations": [
+        ["buy a ticket", "to buy a ticket", "to go to the store"], 
+        ["to have fun", "to have a good time", "to enjoy"], 
+        ["to enjoy", "to have a good time", "to have fun"], 
+        ["have fun", "they have a good time", "they have fun"], 
+        ["pleased", "happy", "proud"], 
+        ["to have fun", "to see them", "to enjoy"], 
+        ["thankful", "also happy", "proud"], 
+        ["smiles", "personx gets exercise", "get 's some fresh air"], 
+        ["pleased", "proud", "happy"]
+    ], "<|sent1|>_generated_dims": [
+        ["<|xNeed|>", "<|xNeed|>", "<|xNeed|>"], 
+        ["<|xIntent|>", "<|xIntent|>", "<|xIntent|>"], 
+        ["<|xWant|>", "<|xWant|>", "<|xWant|>"], 
+        ["<|oEffect|>", "<|oEffect|>", "<|oEffect|>"], 
+        ["<|xReact|>", "<|xReact|>", "<|xReact|>"], 
+        ["<|oWant|>", "<|oWant|>", "<|oWant|>"], 
+        ["<|oReact|>", "<|oReact|>", "<|oReact|>"], 
+        ["<|xEffect|>", "<|xEffect|>", "<|xEffect|>"], 
+        ["<|xAttr|>", "<|xAttr|>", "<|xAttr|>"]
+    ]
+}
