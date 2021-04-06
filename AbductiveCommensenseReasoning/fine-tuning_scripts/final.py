@@ -14,7 +14,7 @@ torch.manual_seed(4)
 
 count = 1
 bsz = 1
-maxb = 30
+maxb = 50
 minb = 7
 
 t = 0.7
