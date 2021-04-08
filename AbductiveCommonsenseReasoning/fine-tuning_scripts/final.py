@@ -26,10 +26,10 @@ for val in [5]:
         for sline in source:
             if count % bsz == 0:
                 with torch.no_grad():
-                    hypotheses_batch = bart.sample(slines, sampling=True, sampling_topk=val, temperature=t, lenpen=2.0, max_len_b=maxb, min_len=minb, no_repeat_ngram_size=3)
+                    # hypotheses_batch = bart.sample(slines, sampling=True, sampling_topk=val, temperature=t, lenpen=2.0, max_len_b=maxb, min_len=minb, no_repeat_ngram_size=3)
                     
                     # Below line of code for beam search
-                    # hypotheses_batch = bart.sample(slines, beams=5, lenpen=2.0, max_len_b=maxb, min_len_b=minb, no_repeat_ngram_size=3)
+                    hypotheses_batch = bart.sample(slines, beams=5, lenpen=2.0, max_len_b=maxb, min_len_b=minb, no_repeat_ngram_size=3)
                 for hypothesis in hypotheses_batch:
                     fout.write(hypothesis.replace('\n','') + '\n')
                     fout.flush()
@@ -39,10 +39,10 @@ for val in [5]:
             count += 1
         if slines != []:
             
-            hypotheses_batch = bart.sample(slines, sampling=True, sampling_topk=val, temperature=t, lenpen=2.0, max_len_b=maxb, min_len=minb, no_repeat_ngram_size=3)
+            # hypotheses_batch = bart.sample(slines, sampling=True, sampling_topk=val, temperature=t, lenpen=2.0, max_len_b=maxb, min_len=minb, no_repeat_ngram_size=3)
             
             # Below line of code for beam search
-            # hypotheses_batch = bart.sample(slines, beams=5, lenpen=2.0, max_len_b=maxb, min_len_b=minb, no_repeat_ngram_size=3)
+            hypotheses_batch = bart.sample(slines, beams=5, lenpen=2.0, max_len_b=maxb, min_len_b=minb, no_repeat_ngram_size=3)
             for hypothesis in hypotheses_batch:
                 fout.write(hypothesis.replace('\n','') + '\n')
                 fout.flush()
