@@ -1,6 +1,7 @@
-BART/test.hypo referenced numbers
-910
-915
-916
-927
-929
+BART_ParaCOMET/test.hypo | BART/test.hypo
+699 | 910
+704 | 915
+705 | 916
+716 | 927
+718 | 929
+724 | 935
