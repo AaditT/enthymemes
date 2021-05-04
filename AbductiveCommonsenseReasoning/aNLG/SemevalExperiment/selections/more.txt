@@ -12,7 +12,6 @@ BART_ParaCOMET/test.hypo | BART/test.hypo
 753 | 964
 754 | 965
 764 | 975
-771 | 982
 774 | 985
 776 | 987
 785 | 996
