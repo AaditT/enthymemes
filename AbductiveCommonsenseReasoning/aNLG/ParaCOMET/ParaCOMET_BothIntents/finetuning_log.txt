@@ -1,0 +1,5 @@
+1, loss 3.55 | nll_loss 1.433
+2, loss 3.309 | nll_loss 1.367
+3, loss 3.163 | nll_loss 1.247
+4, loss 3.11 | nll_loss 1.196
+5, loss 3.071 | nll_loss 1.148
