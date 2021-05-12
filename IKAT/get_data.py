@@ -30,19 +30,20 @@ for filename in os.listdir("corpus/"):
                 prem2_str = arg_prems[prem2_num - 1]
                 implicit_prem = row[6]
                 if (implicit_prem != ""):
-                    adjacency = row[1]
-                    # if (adjacency == "adjacent"):
-                    sources.append(prem1_str + " # " + prem2_str)
-                    targets.append(prem1_str + " And since " + implicit_prem + " " + prem2_str)
+                    if (row[2] == "und"):
+                        adjacency = row[1]
+                        # if (adjacency == "adjacent"):
+                        sources.append(prem1_str + " # " + prem2_str)
+                        targets.append(prem1_str + " And since " + implicit_prem + " " + prem2_str)
     for source in sources:
         super_sources.append(source)
     for target in targets:
         super_targets.append(target)
 
 print("SOURCES: " + str(len(super_sources)) + " | TARGETS: " + str(len(super_targets)))
-with open('ikat.source', 'w') as f:
+with open('ikat_und.source', 'w') as f:
     for source in super_sources:
         f.write('%s\n' % source)
-with open('ikat.target', 'w') as f:
+with open('ikat_und.target', 'w') as f:
     for target in super_targets:
         f.write('%s\n' % target)
