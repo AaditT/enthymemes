@@ -1,6 +1,6 @@
 prems = []
 counter = 0
-with open('jandata.hypo') as f:
+with open('ikat_sup.hypo') as f:
     for line in f.readlines():
         counter += 1
 
@@ -17,6 +17,6 @@ with open('jandata.hypo') as f:
             
 
 
-with open('jandata_premises.hypo', 'w') as f:
+with open('ikat_sup_premises.hypo', 'w') as f:
     for prem in prems:
         f.write("%s\n" % prem)
